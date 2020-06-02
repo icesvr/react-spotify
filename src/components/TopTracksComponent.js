@@ -9,7 +9,7 @@ const TopTacksComponent = (props) =>{
         
         if(!songs){
             return (
-                <p>Loading songs....</p>
+                <p>Loading songs...</p>
             )
         }else{
             console.log(songs);

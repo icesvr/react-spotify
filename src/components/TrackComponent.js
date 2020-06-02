@@ -24,7 +24,7 @@ const TrackComponent = (props) => {
             </div>
             <div className="col-lg-4 custom">
             
-            <AudioPlayer src={props.data.preview_url} showJumpControls={false} customAdditionalControls={[]} layout="stacked-reverse"  />
+            <AudioPlayer src={props.data.preview_url} showJumpControls={false} customAdditionalControls={[]} layout="stacked-reverse" style={{background: 'white'}}  />
             </div>
         </div>
     )
