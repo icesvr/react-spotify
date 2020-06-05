@@ -25,10 +25,10 @@ const TopTacksComponent = (props) =>{
     return (
         
         <div className="container mt-5">
-            <div className="jumbotron">
+            
                 <h1 className="text-center">Populares</h1>
                 <ShowSongs />
-            </div>
+            
         </div>
     )
 }

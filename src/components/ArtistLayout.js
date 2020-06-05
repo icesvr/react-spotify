@@ -11,7 +11,7 @@ const ArtistLayout = () => {
     const [songs, setSongs] = useState([]);
   
     let {id} = useParams();
-    const token = "BQDGq3uNG_-OXkKrKB-SE5dysVCUPFqLfzmBxIlDXuiJBoWk7SpuWSpIUvX5sAMbkDm51UU6--pBIvEw3Qs2urbSCRsWOhub-2LLjixnOBn2hCMfWIgcwrpO4HgVowltEFZBaAkhGpIEMF1c"
+    const token = "BQCUOGXNGHc1QRz7wQItVC3FBhASsuGQZeTWH4gxvnCa-n-e139VtONKkm4T44VGEFpp-f-pUsXNHzodt4zvYcRntaXdn3OwUF3DcN6IdWaC9KO6Yx79R7su58ttvwxyK1XvcU85kPKdIOHn"
     const headerConfig = HttpHeadersConfig('get',token);
     useEffect( () => {
 

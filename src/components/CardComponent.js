@@ -7,12 +7,12 @@ const CardComponent = (props) => {
 
     return (
         
-        <div className="col-lg-4 my-5">
+        <div className="col-lg-4 mt-5 animated fadeIn">
             <Link to={`/artist/${props.data.artists[0].id}`}>
 
                 <div className="card" >
                     <img src={props.data.images[0].url} className="card-img-top" alt="..." />
-                    <div className="card-body">
+                    <div className="card-body text-center">
                         <h5>{props.data.name}</h5>
                         {artistName}
                     </div>
