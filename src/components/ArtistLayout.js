@@ -11,7 +11,7 @@ const ArtistLayout = () => {
     const [songs, setSongs] = useState([]);
   
     let {id} = useParams();
-    const token = "BQCUOGXNGHc1QRz7wQItVC3FBhASsuGQZeTWH4gxvnCa-n-e139VtONKkm4T44VGEFpp-f-pUsXNHzodt4zvYcRntaXdn3OwUF3DcN6IdWaC9KO6Yx79R7su58ttvwxyK1XvcU85kPKdIOHn"
+    const token = "BQD6Ov4SLm2uJVJRXCbeSI1ZzT1u3RFT1amV2k1pf1vREMnRNDklzIsXv-PEie_JXbYDWcBcid9WyoKzQkcYY6RgPczdc9Q6XB_1inwMxfOdmv-F_h9crLxrqfF-T08pzmHkE6xEBqCj1r3A"
     const headerConfig = HttpHeadersConfig('get',token);
     useEffect( () => {
 
@@ -30,7 +30,7 @@ const ArtistLayout = () => {
     },[]);
 
     useEffect( () => {
-        fetch(`https://api.spotify.com/v1/artists/${id}/top-tracks?country=us`, headerConfig)
+        fetch(`https://api.spotify.com/v1/artists/${id}/top-tracks?country=cl`, headerConfig)
         .then( response => {
             if(response.ok){
                 return response.json();

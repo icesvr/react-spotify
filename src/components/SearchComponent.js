@@ -3,18 +3,25 @@ import React,{useState} from 'react';
 
 const SearchComponent = ({handleSearch}) => {
 
-    const [artist, setArtist] = useState('');
+    const [artist, setArtist] = useState([]);
     
-    const handleEvent = () => {
-        const handle =()=> handleSearch(artist);
-        handle();
-    }
 
+     if(artist.length > 0){
+         handleSearch(artist);
+     }
+   
+  
+    
     return (
-        <div class="input-group mb-3">
-            <input type="text" class="form-control"  onChange={e => setArtist(e.target.value)} onKeyUp={handleEvent} aria-label="Recipient's username" aria-describedby="button-addon2" autoFocus={true} />
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary"  type="button" id="button-addon2">Button</button>
+        <div className="input-group mb-3">
+            <input type="text" className="form-control"  onChange={e => {
+                
+                setArtist(e.target.value);
+                
+
+            } }  />
+            <div className="input-group-append">
+                <button className="btn btn-outline-secondary"  type="button" id="button-addon2">Button</button>
             </div>
         </div>
     )
